@@ -1,65 +1,72 @@
 # Windows-Sripts
-Scripts I have made overtime for windows and automations
+A collection I have made overtime of batch scripts and Windows commands to automate activation, privacy tweaks, application installation, power configuration, and system customization.
 
+---
+
+````md
 # Windows Utility & Automation Scripts
 
-A collection of **batch scripts** and **Windows commands** to automate activation, privacy tweaks, application installation, power configuration, and system customization.
+A collection of batch scripts and Windows commands designed to automate:
+- Windows & Office activation
+- Privacy / debloat tweaks
+- Application installation
+- CPU & power plan management
+- System customization
 
 ---
 
-## ➤ Contents
-
-* Script Descriptions
-* Application Installation Scripts
-* Power & CPU Management
-* Windows Commands & Tweaks
-* Defender & Privacy Notes
-* Cosmetic / Optional Tweaks
+## Table of Contents
+- [Script Descriptions](#script-descriptions)
+- [Application Installation Scripts](#application-installation-scripts)
+- [Power & CPU Management](#power--cpu-management)
+- [Windows Commands](#windows-commands)
+- [Windows Defender & Privacy](#windows-defender--privacy)
+- [Cosmetic / Optional Tweaks](#cosmetic--optional-tweaks)
 
 ---
 
-## ➤ Script Descriptions
+## Script Descriptions
 
-### ▸ Activation Scripts
+### Activation
 
-1. **Activator - Microsoft Office LTSC Professional Plus 2024.bat**
+1. **Activator - Microsoft Office LTSC Professional Plus 2024.bat**  
    ➣ Activates Office LTSC Professional Plus 2024
 
-2. **Activator - Windows 10｜11.bat**
+2. **Activator - Windows 10｜11.bat**  
    ➣ Activates Windows 10 or Windows 11
 
 ---
 
-### ▸ Configuration Scripts
+### Configuration
 
-3. **Config-MSI-Afterburner.bat**
-   ➣ Configures MSI Afterburner
-   ➣ Fan curves, auto-start, and general setup
+3. **Config-MSI-Afterburner.bat**  
+   ➣ Configures MSI Afterburner  
+   ➣ Fan settings, auto-start, and basic configuration
 
 ---
 
-### ▸ Privacy & Debloat Scripts
+### Privacy / Debloat
 
-4. **Disable Privacy - with apps and office.bat**
-   ➣ Disables Windows tracking
+4. **Disable Privacy - with apps and office.bat**  
+   ➣ Disables Windows tracking  
    ➣ Installs Firefox, MSI Afterburner, Discord, and Office 2024
 
-5. **Disable Privacy - with only install_apps.bat**
-   ➣ Disables Windows tracking
+5. **Disable Privacy - with only install_apps.bat**  
+   ➣ Disables Windows tracking  
    ➣ Installs Firefox, MSI Afterburner, and Discord
 
-6. **Disable Privacy - with only install_office.bat**
-   ➣ Disables Windows tracking
+6. **Disable Privacy - with only install_office.bat**  
+   ➣ Disables Windows tracking  
    ➣ Installs Office 2024
 
 7. **Disable Privacy - with only vivaldi.bat**
 
-8. **Disable Privacy.bat**
+8. **Disable Privacy.bat**  
    ➣ Disables Windows tracking only
 
 ---
 
-## ➤ Application Installation Scripts
+## Application Installation Scripts
 
 9. **Installing 7-Zip, Steam, Cursor, VLC, Powertoys, Photos, Snip.bat**
 
@@ -73,111 +80,115 @@ A collection of **batch scripts** and **Windows commands** to automate activatio
 
 ---
 
-## ➤ Power & CPU Management
+## Power & CPU Management
 
-14. **Laptop_CPU Clock.bat**
-    ➣ Creates two power plans:
-    ▸ Limited CPU (~2.00 GHz)
-    ▸ Full performance
-    ➣ Desktop shortcuts to switch plans instantly
+14. **Laptop_CPU Clock.bat**  
+   ➣ Creates two power plans:  
+   - Limited CPU clock (~2.00 GHz)  
+   - Full performance  
+   ➣ Desktop shortcuts to switch plans instantly
 
-15. **Office-2024-config-creator.bat**
-    ➣ Creates `Configuration2024.xml` in `C:\Office`
-    ➣ Installs:
-    ▸ Office Pro Plus 2024
-    ▸ Visio Pro 2024
-    ▸ Project Pro 2024
+15. **Office-2024-config-creator.bat**  
+   ➣ Creates `C:\Office\Configuration2024.xml`  
+   ➣ Installs:
+   - Office Pro Plus 2024  
+   - Visio Pro 2024  
+   - Project Pro 2024  
 
-16. **PC_CPU Clock.bat**
-    ➣ Creates two power plans:
-    ▸ Limited CPU (~3.00 GHz)
-    ▸ Full performance
-    ➣ Desktop shortcuts included
+16. **PC_CPU Clock.bat**  
+   ➣ Creates two power plans:  
+   - Limited CPU clock (~3.00 GHz)  
+   - Full performance  
+   ➣ Desktop shortcuts included
 
-17. **Sleep Shortcut**
-    ➣ One-click shortcut to put the PC into sleep mode
-
----
-
-## ➤ Miscellaneous
-
-18. **test anything.bat**
-    ➣ Draft / testing file
-
-19. **Windows-Defender.bat**
-    ➣ Disables Windows Defender
-
-20. **Winget - BitsTransfer.bat**
-    ➣ Downloads Winget via BitsTransfer (no longer works)
-
-21. **Winget - Invoke-WebRequest.bat**
-    ➣ Downloads Winget via Invoke-WebRequest (no longer works)
+17. **Sleep Shortcut**  
+   ➣ One-click shortcut to put the PC into sleep mode
 
 ---
 
-## ➤ Windows Commands
+## Miscellaneous
 
-### ▸ Run in Terminal
+18. **test anything.bat**  
+   ➣ Draft / testing file
+
+19. **Windows-Defender.bat**  
+   ➣ Disables Windows Defender
+
+20. **Winget - BitsTransfer.bat**  
+   ➣ Downloads Winget via BitsTransfer (deprecated)
+
+21. **Winget - Invoke-WebRequest.bat**  
+   ➣ Downloads Winget via Invoke-WebRequest (deprecated)
+
+---
+
+## Windows Commands
+
+### Run in Terminal
 
 Add **Ultimate Performance** power plan:
-
-```
+```bash
 powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
-```
+````
 
 ➣ Ensures CPU can reach factory boost clocks
 
 ---
 
-### ▸ Run in Admin PowerShell
+### Run in Admin PowerShell
 
-Windows debloat tools:
+Debloat Windows:
 
-```
+```powershell
 iwr -useb https://git.io/debloat | iex
 ```
 
-➣ Video reference: [https://youtu.be/pkeGuGUegss?t=109](https://youtu.be/pkeGuGUegss?t=109)
+GUI-based cleaner:
 
-```
+```powershell
 irm christitus.com/win | iex
 ```
 
-➣ GUI-based cleaner
-➣ [https://christitus.com/one-tool-for-everything/](https://christitus.com/one-tool-for-everything/)
+References:
+
+* [https://youtu.be/pkeGuGUegss?t=109](https://youtu.be/pkeGuGUegss?t=109)
+* [https://christitus.com/one-tool-for-everything/](https://christitus.com/one-tool-for-everything/)
 
 ---
 
-### ▸ Run via Win + R
+### Run via Win + R
 
-Show all installed apps:
+Show all installed applications:
 
-```
+```text
 shell:Appsfolder
 ```
 
-Startup apps folder (create manually if missing):
+Startup folder (create if missing):
 
-```
+```text
 C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup
 ```
 
 ---
 
-## ➤ Permanently Disable Windows Defender
+## Windows Defender & Privacy
 
-> Warning: This saves RAM/CPU but reduces security.
+> [!WARNING]
+> Disabling Windows Defender reduces system security.
+
+Disable Defender permanently:
 
 1. Open **Registry Editor**
 2. Navigate to:
 
-```
+```text
 Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender
 ```
 
 3. Create DWORD (32-bit):
 
-```
+```text
 DisableAntiSpyware = 1
 ```
 
@@ -186,47 +197,48 @@ Video guide:
 
 ---
 
-## ➤ Cosmetic / Optional Tweaks
+## Cosmetic / Optional Tweaks
 
 List all power plans:
 
-```
+```bash
 powercfg -list
 ```
 
 Delete a power plan:
 
-```
+```bash
 powercfg -delete
 ```
 
 ---
 
-### ▸ CPU Frequency Control (Power Options)
+### CPU Frequency Control
 
 1. Control Panel → Hardware & Sound → Power Options
-2. Change Plan Settings
-3. Advanced Power Settings
-4. Processor Power Management
+2. Change plan settings
+3. Advanced power settings
+4. Processor power management
 5. Adjust:
-   ▸ Maximum processor state
-   ▸ Minimum processor state
+
+   * Maximum processor state
+   * Minimum processor state
 
 ---
 
-### ▸ Enable Hidden Power Options (Registry)
+### Enable Hidden Power Options (Registry)
 
-Add **Maximum processor state**:
+Enable **Maximum processor state**:
 
-```
+```cmd
 REG ADD HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\
 54533251-82be-4824-96c1-47b60b740d00\
 bc5038f7-23e0-4960-96da-33abaf5935ec /v Attributes /t REG_DWORD /d 2 /f
 ```
 
-Add **Minimum processor state**:
+Enable **Minimum processor state**:
 
-```
+```cmd
 REG ADD HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\
 54533251-82be-4824-96c1-47b60b740d00\
 893dee8e-2bef-41e0-89c6-b55d0929964c /v Attributes /t REG_DWORD /d 2 /f
@@ -234,14 +246,16 @@ REG ADD HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\
 
 ---
 
-### ▸ Desktop Power Plan Shortcut
+### Desktop Power Plan Shortcut
 
 1. Right-click Desktop → New → Shortcut
 2. Location:
 
-```
+```text
 C:\Windows\System32\powercfg.exe /setactive [POWER_GUID]
 ```
 
-3. Name it
+3. Name the shortcut
 4. (Optional) Change icon via shortcut properties
+
+```
