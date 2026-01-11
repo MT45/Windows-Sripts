@@ -28,19 +28,19 @@ A collection of batch scripts and Windows commands designed to automate:
 ➜ **add_script_user.bat**  
    ➣ Create local users, create groups and add users into the groups
    
-➜ **delete_script_user.bat**
+➜ **delete_script_user.bat**  
    ➣ Delete users, delete users in groups, and delete the groups
    
-➜ **Custom-Script.bat**
+➜ **Custom-Script.bat**  
    ➣ A mix from all other scripts (enables/disables features I (don't) need the most)
    
-➜ **Edge.bat**
+➜ **Edge.bat**  
    ➣ A script to remove Edge and Edge Updates
    
-➜ **script-OU_v1.bat**
+➜ **script-OU_v1.bat**  
    ➣ A powershell Script to create a whole tree structure (arborescence) in an Active Directory
    
-➜ **script-OU_v1.bat.bat**
+➜ **script-OU_v1.bat.bat**  
    ➣ A revised version of the V1 where the password and domain can be easily changed
    
 
