@@ -89,8 +89,6 @@ A collection of batch scripts and Windows commands designed to automate:
 
 10. **Installing MSI, Discord, 7-Zip, Steam, VLC, Powertoys, Photos, Snip.bat**
 
-11. **Installing Firefox, MSI Afterburner, Discord, 7-Zip, Steam, Kdenlive, OBS, Cursor, VLC, Powertoys, Photos, Snip & Sketch, Minecraft.bat**
-
 12. **Installing Vivaldi, MSI Afterburner, Discord, 7-Zip, Steam, Kdenlive, OBS, G Hub, Cursor, VLC, Powertoys, Photos, Snip, Minecraft.bat**
 
 13. **Installing Vivaldi, MSI, Discord, 7-Zip, Steam, Cursor, VLC, Powertoys, Photos, Snip.bat**
