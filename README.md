@@ -251,7 +251,9 @@ REG ADD HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\
 ```text
 C:\Windows\System32\powercfg.exe /setactive [POWER_GUID]
 ```
-Repalce what s in the brackets what you get from powercfg -list
+> [!WARNING]
+> Repalce what s in the brackets what you get from powercfg -list.
+
 ```cmd
 powercfg -list
 ```
