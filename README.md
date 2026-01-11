@@ -1,9 +1,6 @@
 # Windows-Sripts
 A collection I have made overtime of batch scripts and Windows commands to automate activation, privacy tweaks, application installation, power configuration, and system customization.
 
----
-
-````md
 # Windows Utility & Automation Scripts
 
 A collection of batch scripts and Windows commands designed to automate:
@@ -129,7 +126,7 @@ A collection of batch scripts and Windows commands designed to automate:
 Add **Ultimate Performance** power plan:
 ```bash
 powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
-````
+```
 
 ➣ Ensures CPU can reach factory boost clocks
 
