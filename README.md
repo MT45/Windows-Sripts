@@ -119,7 +119,7 @@ A collection of batch scripts and Windows commands designed to automate:
 
 ---
 
-## Windows Commands
+# ☰☰☰☰☰Windows Commands☰☰☰☰☰
 
 ### Run in Terminal
 
