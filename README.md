@@ -251,8 +251,10 @@ REG ADD HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\
 ```text
 C:\Windows\System32\powercfg.exe /setactive [POWER_GUID]
 ```
+Repalce what s in the brackets what you get from powercfg -list
+```cmd
+powercfg -list
+```
 
 3. Name the shortcut
 4. (Optional) Change icon via shortcut properties
-
-```
