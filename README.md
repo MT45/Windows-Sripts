@@ -25,7 +25,7 @@ A collection of batch scripts and Windows commands designed to automate:
 ## Script Descriptions
 
 ### No Category
-➜ **add_script_user.bat**
+➜ **add_script_user.bat**  
    ➣ Create local users, create groups and add users into the groups
    
 ➜ **delete_script_user.bat**
