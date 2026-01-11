@@ -24,6 +24,10 @@ A collection of batch scripts and Windows commands designed to automate:
 
 ## Script Descriptions
 
+### Windows Answer File
+Windows 10: 10autounattend.xml
+Windows 11: 11autounattend.xml
+
 ### No Category
 ➜ **add_script_user.bat**  
    ➣ Create local users, create groups and add users into the groups
