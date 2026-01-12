@@ -48,7 +48,7 @@ Windows 11: 11autounattend.xml
    ➣ A revised version of the V1 where the password and domain can be easily changed
    
 ➜ **script-OU_v3.bat**  
-   ➣ A revised version of the V2 where the domain placeholder was missing at the end of the script
+   ➣ A revised version of the V2 where the domain placeholder ($DomainDN) was missing at the end of the script
    
 
 ### Activation
