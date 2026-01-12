@@ -44,7 +44,7 @@ Windows 11: 11autounattend.xml
 ➜ **script-OU_v1.bat**  
    ➣ A powershell Script to create a whole tree structure (arborescence) in an Active Directory
    
-➜ **script-OU_v1.bat.bat**  
+➜ **script-OU_v3.bat**  
    ➣ A revised version of the V1 where the password and domain can be easily changed
    
 
