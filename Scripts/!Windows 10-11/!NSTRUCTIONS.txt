@@ -1,0 +1,148 @@
+=========================
+ Script Descriptions
+=========================
+
+1. Activator - Microsoft Office LTSC Professional Plus 2024.bat
+→ Activates Office LTSC Professional Plus 2024
+
+2. Activator - Windows 10｜11.bat
+→ Activates Windows 10 or 11
+
+3. Config-MSI-Afterburner.bat
+→ Sets up MSI Afterburner (fan settings, auto-start, etc.)
+
+4. Disable Privacy - with apps and office
+→ Disables tracking in Windows
+→ Installs Firefox, Afterburner, Discord, and Office 2024
+
+5. Disable Privacy - with only install_apps.bat
+→ Disables tracking in Windows
+→ Installs Firefox, Afterburner, and Discord
+
+6. Disable Privacy - with only install_office.bat
+→ Disables tracking in Windows
+→ Installs Office 2024
+
+7. Disable Privacy - with only vivaldi.bat
+
+8. Disable Privacy.bat
+→ Disables tracking in Windows
+
+==================================
+ Applcation installtion scripts
+==================================
+ 
+9. Installing Installing 7-Zip, Steam, Cursor, VLC, Powertoys, Photos, Snip.bat
+
+10. Installing MSI, Discord, 7-Zip, Steam,VLC, Powertoys, Photos, Snip.bat
+
+11. Installing Firefox, MSI Afterburner, Discord, 7-Zip, Steam, Kdenlive, OBS, Cursor, VLC, Powertoys, Photos, Snip and Sketch, Minecraft.bat
+
+12. Installing Vivaldi, MSI Afterburner, and Discord, 7-Zip, Steam, Kdenlive, OBS, Ghub, Cursor, VLC, Powertoys, Photos, Snip, Minecraft.bat
+
+13. Installing Vivaldi, MSI, Discord, 7-Zip, Steam, Cursor, VLC, Powertoys, Photos, Snip.bat
+
+14. Laptop_CPU Clock.bat
+→ Creats 2 power configs, one that limits the cpu's clock to not go above ~2.00Ghz  and another one to let the cpu to go as high as it needs
+→ Creats shortcuts on desktop that will run a command to swtich between power configs.
+
+15. Office-2024-config-creator.bat
+→ Creat a config for office in C:\Office called Configuration2024.xml
+→ This config file will tell office deployment tool to install Office Pro Plus 2024, Visio Pro 2024 and Project Pro 2024
+
+16. PC_CPU Clock.bat
+→ Creats 2 power configs, one that limits the cpu's clock to not go above ~3.00Ghz  and another one to let the cpu to go as high as it needs
+→ Creats shortcuts on desktop that will run a command to swtich between power configs.
+
+17. Sleep shortcut  
+→ One click shortcut to put the computer into sleep mode
+
+18. test anything.bat
+→ Draft file
+
+19. Windows-Defender.bat
+→ Disables Windows Defender
+
+20. Winget - BitsTransfer.bat
+→ Download Winget via BitsTransfer (doesn't anymore)
+
+21. Winget - Invoke-WebRequest.bat
+→ Download Winget via Invoke-WebRequest (doesn't anymore)
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------Some Windows Command--------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------Run in a Terminal-----------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command to add "Ultimate Performance" power config (it will ensure that your CPU's Clock will get to its factory boost clock):
+powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------Run in an admin Powershell-----------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Scripts to remove Microsft's bullshits' from Windows (run in an admin powershell):
+
+iwr -useb https://git.io/debloat|iex ---> https://youtu.be/pkeGuGUegss?t=109 See image "debloat"
+irm christitus.com/win|iex ---> https://christitus.com/one-tool-for-everything/ (GUI Cleaner)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------Run in some random apps------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Copy/Past into --> Run(Win+R) (It will show every intalled apps): 
+shell:Appsfolder
+
+Go in taksmanager and go to Startup apps tab to disable any unwanted starting app every time your computer starts ----- If Windows doesn't show Startup apps in taskmanager, then creat this folder "Startup" at the path below:
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup
+
+How to Permanently disable Windows Defender Antivirus on Windows (it will save you RAM and CPU/disk usage):
+Open Registery Editor apps
+Navigate to --> Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender
+Create a new DWORD 32-Bit named "DisableAntiSpyware" and value = 1
+https://youtu.be/V_fjrD2s6ag?si=o6OnXNKGt_8UHsA-
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------Cosmetics (not required but nice to have)--------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command to list all power configs (intresting if you want to make desktop pcfg shortcut, eg. make a shortcut to lower your CPU's clock to save energy or reduce temps (and fan speed) while doing hw): See image "desktop pcfg shortcut"
+powercfg -list
+
+How to set max/min frequency of the cpu in powercfg:
+1.	Open Control Panel\Hardware and Sound\Power Options
+2.	Change Plan Settings
+3.	change advanced power settings
+4.	Processor Power Managment
+5.	Change settings in "Maximum processor state" & "Minimum processor state"
+6.	My example see image "This settings block my cpu clock at 3Ghz (good enought for hw)"
+
+Here is how you would want to make desktop pcfg shortcut:
+1.	Right click on deskptop --> New --> Shortcut
+2.	Copy/Paste this in the "location of the item" --> C:\Windows\System32\powercfg.exe /setactive [[[381b4222-f694-41f0-9685-ff5bb260df2e]]] (ofc repalce what s in the brackets what you get from powercfg -list)
+3. 	Name it
+4.	It's create it should work, to change the icon, right click --> properties --> change icon --> select and appy
+
+Add "Maximum processor state" in pcfg (only do it if it doesn't show up in "change advanced power settings"): 
+REG ADD HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\bc5038f7-23e0-4960-96da-33abaf5935ec /v Attributes /t REG_DWORD /d 2 /f
+
+Add "Minimum processor state" (only do it if it doesn't show up in "change advenced power settings"): 
+REG ADD HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\893dee8e-2bef-41e0-89c6-b55d0929964c /v Attributes /t REG_DWORD /d 2 /f
+
+Command to delete a power config:
+powercfg -delete
