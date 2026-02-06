@@ -49,15 +49,6 @@ Windows 11: 11autounattend.xml
    
 ➜ **script-OU_v3.bat**  
    ➣ A revised version of the V2 where the domain placeholder ($DomainDN) was missing at the end of the script
-   
-
-### Activation
-
-1. **Activator - Microsoft Office LTSC Professional Plus 2024.bat**  
-   ➣ Activates Office LTSC Professional Plus 2024
-
-2. **Activator - Windows 10｜11.bat**  
-   ➣ Activates Windows 10 or Windows 11
 
 ---
 
