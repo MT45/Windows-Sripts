@@ -38,7 +38,7 @@ Windows 11: 11autounattend.xml
 ➜ **Custom-Script.bat**  
    ➣ A mix from all other scripts (enables/disables features I (don't) need the most)
    
-➜ **Edge.bat**  
+➜ **Edge-Remover.bat**  
    ➣ A script to remove Edge and Edge Updates
    
 ➜ **script-OU_v1.bat**  
@@ -64,7 +64,7 @@ Windows 11: 11autounattend.xml
 
 4. **Disable Privacy - with apps and office.bat**  
    ➣ Disables Windows tracking  
-   ➣ Installs Firefox, MSI Afterburner, Discord, and Office 2024
+   ➣ Installs Firefox, MSI Afterburner, Discord, and Microsoft Office 2024 Professional Plus
 
 5. **Disable Privacy - with only install_apps.bat**  
    ➣ Disables Windows tracking  
@@ -72,7 +72,7 @@ Windows 11: 11autounattend.xml
 
 6. **Disable Privacy - with only install_office.bat**  
    ➣ Disables Windows tracking  
-   ➣ Installs Office 2024
+   ➣ Installs Microsoft Office 2024 Professional Plus
 
 7. **Disable Privacy - with only vivaldi.bat**
 
@@ -87,9 +87,11 @@ Windows 11: 11autounattend.xml
 
 10. **Installing MSI, Discord, 7-Zip, Steam, VLC, Powertoys, Photos, Snip.bat**
 
+11. **Installing PowerToys, Photos, Snip.bat**
+
 12. **Installing Vivaldi, MSI Afterburner, Discord, 7-Zip, Steam, Kdenlive, OBS, G Hub, Cursor, VLC, Powertoys, Photos, Snip, Minecraft.bat**
 
-13. **Installing Vivaldi, MSI, Discord, 7-Zip, Steam, Cursor, VLC, Powertoys, Photos, Snip.bat**
+13. **Installing Vivaldi, MSI Afterburner, Discord, 7-Zip, Steam, Cursor, VLC, Powertoys, Photos, Snip.bat**
 
 ---
 
@@ -124,13 +126,10 @@ Windows 11: 11autounattend.xml
 18. **test anything.bat**  
    ➣ Draft / testing file
 
-19. **Windows-Defender.bat**  
-   ➣ Disables Windows Defender
+20. **Winget LTS - Install via BitsTransfer**  
+   ➣ Downloads the latest Winget via BitsTransfer
 
-20. **Winget - BitsTransfer.bat**  
-   ➣ Downloads Winget via BitsTransfer (deprecated)
-
-21. **Winget - Invoke-WebRequest.bat**  
+21. **Winget - Invoke-WebRequest - (Slower)**  
    ➣ Downloads Winget via Invoke-WebRequest (deprecated)
 
 ---
